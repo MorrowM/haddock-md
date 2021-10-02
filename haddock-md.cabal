@@ -1,0 +1,27 @@
+cabal-version:      2.4
+name:               haddock-md
+version:            0.1.0.0
+synopsis:           Write your haddocks as markdown 
+description:
+  A GHC plugin that converts haddock strings from markdown before being passed to haddock. Requires `pandoc` to be on the PATH. 
+
+bug-reports:        https://github.com/morrowm/haddock-md/issues
+license:            BSD-3-Clause
+author:             Morrow
+maintainer:         themorrowm@gmail.com
+copyright:          Morrow
+category:           Compiler Plugin,Documentation
+extra-source-files: CHANGELOG.md
+
+library
+  exposed-modules:  HaddockMd
+  build-depends:
+    , base
+    , bytestring
+    , ghc
+    , text
+    , typed-process
+    , uniplate
+
+  hs-source-dirs:   src
+  default-language: Haskell2010
