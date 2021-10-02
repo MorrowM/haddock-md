@@ -3,7 +3,8 @@
 ## Usage
 
 1. Install [pandoc](https://pandoc.org/). Make sure it's on your `PATH`.
-2. Add the following to the top of your module:
+2. Add this package as a dependency.
+3. Add the following to the top of your module:
 
 ```hs
 {-# OPTIONS_GHC -fplugin=HaddockMd #-}
